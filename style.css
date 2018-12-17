@@ -4,7 +4,7 @@ body{
     font-family: Quicksand;
     max-width: 100%;
 }
-nav{
+.navbar{
     background: rgba(0,0,0,0.8);
     position: fixed;
     top: 0;
@@ -52,7 +52,7 @@ nav ul li a{
     text-decoration: none;
 
 }
-section.F-section{
+.first-section{
     width: 100%;
     height: 100vh;
     background: url(img/1.jpg);
@@ -71,25 +71,33 @@ section.F-section{
     font-size: 20px;
     line-height: 30px; 
 }
-.T-name{
+.team-name{
     color: #fff;
     margin: 0;
     padding-top: 200px;
 }
-.sec2{
+.section2{
     height: 710px;
     margin-top: 25px;
 }
-.team{
+.member-cards{
     margin: auto;
     width: 1160px;
     height: 500px;
 }
-.t-mem{
+.team-member{
     font-size: 80px;
     margin: 0 0 30px 0;
 }
-.m-img{
+.team-skill{
+    font-size: 80px;
+    margin: 0 0 30px 0;
+}
+.team-contact{
+    font-size: 80px;
+    margin: 0 0 30px 0;
+}
+.member-image{
     height: 200px;
     width: 200px;
     background: url("img/2.jpg");
@@ -102,7 +110,7 @@ section.F-section{
     margin-left: 25px;
     margin-right: 0;
 }
-.card{
+.member-card{
     width: 250px;
     height: 500px;
     float: left;
@@ -110,11 +118,11 @@ section.F-section{
     margin-right: 40px;
     padding-top: 30px;
 }
-.title {
+.card-name {
     color: grey;
   }
   
-  .button {
+.button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -129,7 +137,7 @@ section.F-section{
 .button:hover {
     background-color: #555;
 }
-.m-desc{
+.member-description{
     padding: 30px 15px 0px 15px;
 }
 .t-skill{

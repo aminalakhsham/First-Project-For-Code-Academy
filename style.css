@@ -1,17 +1,17 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Quicksand;
+    font-family: monospace;
     max-width: 100%;
 }
 .navbar{
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.4);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    padding: 10px 100px;
+    padding-left: 10px;
     box-sizing: border-box;
     transition: .3s;
 }
@@ -41,6 +41,7 @@ nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.3s;
+    font-size: 20px;
 }
 .home-link:link{
     color: white;
@@ -54,12 +55,12 @@ nav ul li a{
 }
 .first-section{
     width: 100%;
-    height: 100vh;
     background: url(img/1.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
     font-size: 100px;
+    padding-bottom: 200px;
 }
 .content{
     margin-top: 80px;
@@ -75,15 +76,17 @@ nav ul li a{
     color: #fff;
     margin: 0;
     padding-top: 200px;
+    text-shadow: 2px 2px black;
 }
 .section2{
-    height: 710px;
+    /* height: 710px; */
     margin-top: 25px;
 }
 .member-cards{
     margin: auto;
-    width: 1160px;
-    height: 500px;
+    /* width: 1160px; */
+    /* height: 500px; */
+    text-align: center;
 }
 .team-member{
     font-size: 80px;
@@ -113,10 +116,12 @@ nav ul li a{
 .member-card{
     width: 250px;
     height: 500px;
-    float: left;
     box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.2);
-    margin-right: 40px;
+    margin-right: 34px;
     padding-top: 30px;
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-left: 34px;
 }
 .card-name {
     color: grey;
@@ -142,7 +147,9 @@ nav ul li a{
 }
 .t-skill{
     margin: auto;
-    width: 1024px;
+    width: 90%;
+    text-align: center;
+    max-width: 1200px;
 }
 fieldset {
     border: none;
@@ -162,9 +169,8 @@ fieldset {
 .contact-area{
     background: #F9F9F9;
     padding: 25px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);    width: 500px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     margin: auto;
-    height: 500px;
     margin-bottom: 50px;
     width: 700px;
 }
@@ -182,7 +188,7 @@ textarea {
 }
 h3 {
     display: block;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 300;
     margin-bottom: 10px;
     margin-top: auto;
@@ -208,4 +214,12 @@ button[type="submit"]:hover {
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+  nav ul li a {
+    font-size: 15px;
+  }
+  .img-contact{
+      display: none;
+  }
 }
